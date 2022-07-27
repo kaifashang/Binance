@@ -5,7 +5,7 @@ This software solution receives data about the cryptocurrency market from the Bi
 To automate the launch of this program on the local computer, a Bash script is used. If you need to set a specific time to run this program, you can use the Crontab service. On this gif, you can see a selection of ten pairs sorted in descending order in the "ИЗМЕНЕНИЕ ЦЕНЫ %:" column.
 
 
-<p align="center"><img src="README/binance.gif" width="900" height="500"></p>
+<p align="center"><img src="README/binance.gif" width="720" height="400"></p>
 
 
 ## Technology in the project
