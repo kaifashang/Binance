@@ -1,0 +1,39 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    th, td {
+        border: 2px solid;
+        padding: 10px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+</style>
+</head>
+    <body>
+        <h2>10 самых перспективных криптовалютных пар за день:</h2>
+        <table>
+            <tr>
+                <th>ПАРА:</th>
+                <th>ИЗМЕНЕНИЕ ЦЕНЫ:</th>
+                <th>ИЗМЕНЕНИЕ ЦЕНЫ %:</th>
+                <th>ОБЪЕМ ТОРГОВ:</th>
+                <th>КОЛИЧЕСТВО СДЕЛОК:</th>
+            </tr>
+
+            {% for item in items %}
+            <tr>
+                <td align="center">{{ item['symbol'] }}</td>
+                <td>{{ item['priceChange'] }}</td>
+                <td>{{ item['priceChangePercent'] }}</td>
+                <td>{{ item['quoteVolume'] }}</td>
+                <td>{{ item['count'] }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>
